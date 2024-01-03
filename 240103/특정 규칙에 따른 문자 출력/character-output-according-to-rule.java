@@ -7,8 +7,8 @@ public class Main {
         int n = sc.nextInt();
 
         for(int i=0; i<n; i++) {
-            for(int j=n+n%2 - i*2; j>0; j--) {
-                System.out.print(" ");
+            for(int j=0; j<n-i-1; j++) {
+                System.out.print("  ");
             }
 
             for(int j=0; j<=i; j++) {
@@ -42,9 +42,9 @@ public class Main {
 // i*2+1
 
 // n=5
-// 0 8 1
-// 1 6 2
-// 2 4 3
-// 3 2 4
+// 0 4 1
+// 1 3 2
+// 2 2 3
+// 3 1 4
 // 4 0 5
-// n+n%2 - i*2
+//
