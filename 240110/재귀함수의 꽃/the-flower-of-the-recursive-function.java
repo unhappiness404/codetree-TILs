@@ -6,25 +6,16 @@ public class Main {
 
         int n = sc.nextInt();
 
-        print2(n);
-        print1(n);
+        print(n);
     }
 
-    private static void print1(int n) {
-        if(n == 0) {
-            return;
-        }
-
-        print1(n - 1);
-        System.out.print(n+" ");
-    }
-
-    private static void print2(int n) {
+    private static void print(int n) {
         if(n == 0) {
             return;
         }
 
         System.out.print(n+" ");
-        print2(n - 1);
+        print(n - 1);
+        System.out.print(n+" ");
     }
 }
