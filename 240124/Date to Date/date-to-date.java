@@ -13,16 +13,16 @@ public class Main {
         int d2 = sc.nextInt();
         int b = 0;
 
-        for(int i=1; i<=m1; i++) {
+        for(int i=1; i<m1; i++) {
             a +=num_of_days[i];
         }
         a += d1;
-        for(int i=1; i<=m2; i++) {
+        for(int i=1; i<m2; i++) {
             b +=num_of_days[i];
         }
         b += d2;
 
-        System.out.print(b == a ? 1 : b-a);
+        System.out.print(b-a+1);
 
     }
 }
