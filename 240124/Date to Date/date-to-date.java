@@ -22,7 +22,7 @@ public class Main {
         }
         b += d2;
 
-        System.out.print(b-a);
+        System.out.print(b == a ? 1 : b-a);
 
     }
 }
