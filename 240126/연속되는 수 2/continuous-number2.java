@@ -18,10 +18,10 @@ public class Main {
             if(arr[i] == arr[i-1]) {
                 cnt++;
             } else {
-                if(maxCnt < cnt) {
-                    maxCnt = cnt;
-                }
                 cnt = 1;
+            }
+            if(maxCnt < cnt) {
+                maxCnt = cnt;
             }
         }
         System.out.print(maxCnt);
