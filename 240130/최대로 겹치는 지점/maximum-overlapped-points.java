@@ -15,7 +15,7 @@ public class Main {
                 arr[j] += 1;
             }
         }
-        int max = ;
+        int max = 0;
         for(int i=0; i<100; i++) {
             max = Math.max(arr[i], max);
         }
