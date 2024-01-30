@@ -9,8 +9,8 @@ public class Main {
         int[] arr = new int[200];
 
         for(int i=0; i<n; i++) {
-            int x = sc.nextInt()+99;
-            int y = sc.nextInt()+99;
+            int x = sc.nextInt()+100;
+            int y = sc.nextInt()+100;
             for(int j=x; j<y; j++) {
                 arr[j] += 1;
             }
