@@ -6,8 +6,15 @@ public class Main {
 
         String str = sc.next();
 
-        for(int i=str.length()-1; i>=0; i-=2) {
-            System.out.print(str.charAt(i));
+        if(str.length() % 2 == 0) {
+            for(int i=str.length()-1; i>=0; i-=2) {
+                System.out.print(str.charAt(i));
+            }
+        } else {
+            for(int i=str.length()-2; i>=0; i-=2) {
+                System.out.print(str.charAt(i));
+            }
         }
+
     }
 }
