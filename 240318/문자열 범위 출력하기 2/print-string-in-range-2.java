@@ -8,7 +8,7 @@ public class Main {
         int n = sc.nextInt();
 
         int totLength = str.length();
-        int cnt = 0;
+        int cnt = 1;
 
         for(int i = totLength -1; i >= 0; i--) {
             if(cnt > n) {
