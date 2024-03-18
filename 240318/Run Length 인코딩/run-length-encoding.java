@@ -14,7 +14,7 @@ public class Main {
                 cnt = 0;
             } 
             if( i == str.length() - 1) {
-                answer+=str.charAt(i-1)+String.valueOf(cnt+1);
+                answer+=str.charAt(i)+String.valueOf(cnt+1);
             }
             cnt++;
         }
