@@ -5,11 +5,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         
         String str = "";
+        StringBuilder sb = new StringBuilder();
 
         for(int i=0; i<10; i++) {
-            str += sc.next();
+            sb.append(sc.next());
         }
 
-        System.out.print(str.length());
+        System.out.print(sb.toString().length());
     }
 }
