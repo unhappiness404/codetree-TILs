@@ -8,14 +8,16 @@ public class Main {
         int cnt = 1;
         String answer = "";
 
-        for(int i = 1; i <= str.length()-1; i++) {
+        for(int i = 1; i <= str.length(); i++) {
+            if( i == str.length() - 1) {
+                answer+=str.charAt(i)+String.valueOf(cnt+1);
+                break;
+            }
             if(str.charAt(i-1) != str.charAt(i)) {
                 answer+=str.charAt(i-1)+String.valueOf(cnt);
                 cnt = 0;
             } 
-            if( i == str.length() - 1) {
-                answer+=str.charAt(i)+String.valueOf(cnt+1);
-            }
+
             cnt++;
         }
         System.out.println(answer.length());
