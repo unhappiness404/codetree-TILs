@@ -9,7 +9,7 @@ public class Main {
         int cnt = 1;
 
         if(str.length() == 1) {
-            System.out.println(1);
+            System.out.println(2);
             System.out.println(str+1);
         } else {
             for(int i = 1; i < str.length(); i++) {
