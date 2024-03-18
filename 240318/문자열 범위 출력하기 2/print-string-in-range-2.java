@@ -9,8 +9,15 @@ public class Main {
 
         int totLength = str.length();
 
-        for(int i = totLength -1; i >= totLength - n; i--) {
-            System.out.print(str.charAt(i));
+        if(totLength - n > 0) {
+            for(int i = totLength -1; i >= totLength - n; i--) {
+                System.out.print(str.charAt(i));
+            }
+        } else {
+            for(int i = totLength -1; i >= 0; i--) {
+                System.out.print(str.charAt(i));
+            }
         }
+
     }
 }
