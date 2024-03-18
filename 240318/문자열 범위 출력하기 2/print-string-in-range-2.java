@@ -8,15 +8,14 @@ public class Main {
         int n = sc.nextInt();
 
         int totLength = str.length();
+        int cnt = 0;
 
-        if(totLength - n > 0) {
-            for(int i = totLength -1; i >= totLength - n; i--) {
-                System.out.print(str.charAt(i));
+        for(int i = totLength -1; i >= 0; i--) {
+            if(cnt > n) {
+                break;
             }
-        } else {
-            for(int i = totLength -1; i >= 0; i--) {
-                System.out.print(str.charAt(i));
-            }
+            System.out.print(str.charAt(i));
+            cnt++;
         }
 
     }
