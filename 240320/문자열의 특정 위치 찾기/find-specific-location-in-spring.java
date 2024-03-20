@@ -7,7 +7,7 @@ public class Main {
         String a = sc.next();
         String b = sc.next();
 
-        if(a.indexOf(b) > 0) {
+        if(a.indexOf(b) >= 0) {
             System.out.print(a.indexOf(b));
         } else {
             System.out.print("No");
